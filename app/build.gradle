@@ -22,19 +22,25 @@ android {
         }
     }
     productFlavors {
+        //Currently only one flavor can be on the device because the application id is the same
         free {
+            //applicationId "com.udacity.gradle.builditbigger.free"
         }
         paid {
+            //applicationId "com.udacity.gradle.builditbigger.paid"
         }
     }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    // Added for AdMob
+
     compile project(':jokesdisplay')
-    compile 'com.android.support:appcompat-v7:23.3.0'
-    freeCompile 'com.google.android.gms:play-services:9.0.2'
     compile project(path: ':backend', configuration: 'android-endpoints')
+
+    compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.android.support:multidex:1.0.0'
+
+    // Added for AdMob
+    freeCompile 'com.google.android.gms:play-services:9.0.2'
 }
