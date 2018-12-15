@@ -9,7 +9,7 @@
 **Common Requirements**  
 •  Follow Java style guide, git style guide, [core app quality guide][2], and [tablet app quality guide][3].
 
-**Required Components**
+**Required Components**  
 •  Project contains a Java library for supplying jokes.  
 •  Project contains an Android library with an activity that displays jokes passed to it as intent extras.  
 •  Project contains a Google Cloud Endpoints module that supplies jokes from the Java library.  
